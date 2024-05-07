@@ -1,7 +1,6 @@
 package tests;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
-import com.github.javafaker.Faker;
 import data.DataGeneration;
 
 public class FullRegistrationTests extends TestBase {
@@ -37,7 +36,6 @@ public class FullRegistrationTests extends TestBase {
                         .checkResult("Picture", data.img)
                         .checkResult("Address", data.userCurrentAddres)
                         .checkResult("State and City", data.userState + " " + data.userCity);
-
     }
 
     @Test
